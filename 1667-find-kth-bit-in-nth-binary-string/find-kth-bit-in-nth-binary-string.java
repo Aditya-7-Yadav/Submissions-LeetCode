@@ -1,7 +1,7 @@
 class Solution {
     public char findKthBit(int n, int k) {
         StringBuilder sb= new StringBuilder("0");
-        while(n>0){
+        while(n>1){
             
             sb.append("1");
             int i=0;
