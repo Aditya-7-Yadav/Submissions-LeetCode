@@ -11,7 +11,7 @@ class Solution {
         return anss[0];
     }
     void trav(int i,int k,int n,String[] ans,String[] anss,boolean[] vis,StringBuilder sb){
-        // if(num==0)return;
+         if(num<-1)return;
         if(i==n){
             num--;
             if(num==-1)anss[0]=sb.toString();
