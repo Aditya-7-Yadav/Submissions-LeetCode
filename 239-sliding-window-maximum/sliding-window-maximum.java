@@ -6,8 +6,8 @@ class Solution {
         int temp=1;
         ans[0]=pq.peek()[0];
         for(int i=k;i<nums.length;i++){
-            while(pq.size()>0 && pq.peek()[1]<=i-k)pq.poll();   
             pq.add(new int[]{nums[i],i});
+            while(pq.size()>0 && pq.peek()[1]<=i-k)pq.poll();
             ans[temp++]=pq.peek()[0];
         }
         return ans;
